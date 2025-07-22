@@ -2,6 +2,29 @@
 from utils import print_login_menu, print_status, clr, print_market_menu_user, print_market_menu_admin
 from manager import Manager
 
+
+def user_market(manager: Manager):
+    while True:
+        print_market_menu_user()
+        choice = input(">> ")
+
+        if choice == '1':
+            pass
+        elif choice == '2':
+            pass
+        elif choice == '3':
+            pass
+        elif choice == '4':
+            pass
+        elif choice == '5':
+            clr()
+            print("Siz Dasturdan chiqdingiz.")
+            break
+        else:
+            clr()
+            print_status("Noto'g'ri tanlov. Iltimos, qaytadan urinib ko'ring.", "error")
+                
+
 def main():
     manager = Manager()
     while True:
@@ -33,27 +56,6 @@ def main():
         else:
             clr()
             print_status("Noto'g'ri tanlov. Iltimos, qaytadan urinib ko'ring.", "error")
-
-    def user_market(manager: Manager):
-        while True:
-            print_market_menu_user()
-            choice = input(">> ")
-
-            if choice == '1':
-                pass
-            elif choice == '2':
-                pass
-            elif choice == '3':
-                pass
-            elif choice == '4':
-                pass
-            elif choice == '5':
-                clr()
-                print("Siz Dasturdan chiqdingiz.")
-                break
-            else:
-                clr()
-                print_status("Noto'g'ri tanlov. Iltimos, qaytadan urinib ko'ring.", "error")
 
 
 if __name__ == "__main__":

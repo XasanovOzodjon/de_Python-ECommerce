@@ -64,4 +64,8 @@ class Product:
         stock = int(input("Stock: "))
         
         return cls(id, name, description, price, category, stock)
-    
+
+
+    def view_product(self):
+        pass
+        
