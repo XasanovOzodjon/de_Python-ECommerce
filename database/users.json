@@ -1,12 +1,14 @@
 [
   {
-    "id": "581f11fd-5272-45b0-954d-8a1f95908d92",
-    "username": "ali",
-    "password": "932f3c1b56257ce8539ac269d7aab42550dacf8818d075f0bdf1990562aae3ef",
-    "phone": "234134",
-    "first_name": "ali",
-    "last_name": "ali",
-    "age": "123",
-    "gender": "male"
+    "id": "5fb6b7a9-97fb-4e0f-8403-5513997f4d08",
+    "username": "ego",
+    "password": "1718c24b10aeb8099e3fc44960ab6949ab76a267352459f203ea1036bec382c2",
+    "phone": "958281167",
+    "first_name": "Ozods",
+    "last_name": "fdssfa",
+    "age": 19,
+    "gender": "male",
+    "joined_at": "2025-07-23T02:04:42Z",
+    "admin": false
   }
 ]

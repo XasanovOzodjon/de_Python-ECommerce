@@ -2,15 +2,17 @@ import json
 from datetime import datetime
 from uuid import uuid4
 from utils import (
-    make_password, is_valid_username, print_status,
-    is_valid_password,
+    make_password, print_status,
+    clr, check_firstname, check_lastname,
+    cheak_username, cheak_admin, check_password, check_age, 
+    check_phone, check_gender
 )
-
+from getpass import getpass
 
 class User:
-    
-    def __init__(self, id, username, password, phone, first_name, last_name, age, gender):
-        self.id = id
+
+    def __init__(self, idd, username, password, phone, first_name, last_name, age, gender, joined_at=None, admin=False):
+        self.id = idd
         self.username = username
         self.password = password
         self.phone = phone
@@ -18,7 +20,8 @@ class User:
         self.last_name = last_name
         self.age = age
         self.gender = gender
-        self.joined_at = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+        self.joined_at = joined_at or datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+        self.admin = admin
 
     def to_dict(self):
         return {
@@ -30,6 +33,8 @@ class User:
             'last_name': self.last_name,
             'age': self.age,
             'gender': self.gender,
+            'joined_at': self.joined_at,
+            'admin': self.admin
         }
 
     @classmethod
@@ -43,8 +48,10 @@ class User:
             data['last_name'],
             data['age'],
             data['gender'],
+            data['joined_at'],
+            data['admin']
         )
-    
+
     @classmethod
     def load_users(cls):
         with open('database/users.json') as jsonfile:
@@ -65,33 +72,48 @@ class User:
 
     @classmethod
     def create_user(cls):
-        username = input("Username: ")
-        password = input("Password: ")
-        confirm_password = input("Confirm Password: ")
-        phone = input("Phone: ")
+        clr()
         first_name = input("First Name: ")
-        last_name = input("Last Name: ")
-        age = input("Age: ")
-        gender = input("Gender: ")
-
-        if not is_valid_username(username):
-            print_status("username xato kiritildi.", "error")
-        elif User.check_username(username):
-            print_status("username tanlangean.", 'error')
-        elif not is_valid_password(password):
-            print_status("password xato kiritildi.", "error")
-        elif password != confirm_password:
-            print_status("password va confirm password mos emas.", "error")
-        else:
-            user = cls(str(uuid4()), username, make_password(password), phone, first_name, last_name, age, gender)
-            users = cls.load_users()
-            users.append(user)
-            cls.save_users(users)
-
-    @classmethod
-    def check_username(cls, username: str):
-        for user in User.load_users():
-            if user.username == username:
-                return True
+        while not check_firstname(first_name):
+            first_name = input("Enter your first name again: ").title()
             
-        return False
+        clr()
+        last_name = input("Last Name: ")
+        while not check_lastname(last_name):
+            last_name = input("Enter your last name again: ").title()
+
+        clr()
+        username = input("Enter your username: ").lower()
+        result = cheak_admin(username=username)
+        username = result[0]
+        while not cheak_username(username, User.load_users()):
+            username = input("Enter your username again: ").lower()
+            result = cheak_admin(username=username)
+            username = result[0]
+        
+        clr()
+        password = getpass("Password: ")
+        confirm_password = getpass("Confirm Password: ")
+        while not check_password(password, confirm_password):
+            password = getpass("Enter your password: ")
+            confirm_password = getpass("Confirm your password: ")
+        
+        clr()
+        phone = input("Phone - +998  ")
+        while not check_phone(phone):
+            phone = input("Enter your phone number again: ")
+        phone = phone.replace(" ", "").replace("-", "")
+        
+        clr()
+        age = input("Age: ")
+        
+        while not check_age(age):
+            age = input("Enter your age again: ")
+        age = int(age)
+        
+        gender = input("Gender: ").lower()
+        while not check_gender(gender):
+            gender = input("Enter your gender again: ")
+
+        user = cls(str(uuid4()), username, make_password(password), phone, first_name, last_name, age, gender)
+        return user
