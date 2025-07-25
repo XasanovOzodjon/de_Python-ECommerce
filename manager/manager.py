@@ -53,23 +53,24 @@ class Manager:
             product = products[ii]
             print(f"{ii + 1}. {product.name} - {product.price} so'm")
 
-        choice = input("Mahsulotni tanlang (1-{}): ".format(len(products)))
+        choice = input("\nMahsulotni tanlang (1-{}): ".format(len(products)))
         if choice.isdigit():
             choice = int(choice)
             if 1 <= choice <= len(products):
                 product = products[choice - 1]
+                clr()
                 print(f"---------{product.name}----------")
                 print(f"ID: {product.id}")
                 print(f"Narxi: {product.price} so'm")
                 print(f"Kategoriyasi: {product.category}")
                 print(f"Qisqacha: {product.description}")
-                print(f"Qoldiq: {product.stock} dona")
+                print(f"Qoldiq: {product.in_stock} dona")
                 print(f"Yaratilgan: {product.created_at}\n")
                 in_cart = input("Siz ushbu mahsulotni savatchaga qo'shmoqchimisiz? (1: ha / Enter : yo'q): ")
                 if in_cart == '1':
-                    if product.stock > 0:
+                    if product.in_stock > 0:
                         self.current_user.in_cart.append(product)
-                        product.stock -= 1
+                        product.in_stock -= 1
                         Product.save_products(Product.load_products())
                         User.save_users(self.users)
                         clr()

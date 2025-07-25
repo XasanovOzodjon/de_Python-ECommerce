@@ -27,11 +27,13 @@ def user_market(manager: Manager):
 
 def main():
     manager = Manager()
-    while True:
+    clr()
+    while True:  
         print_login_menu()
         choice = input(">> ")
         
         if choice == '1':
+            clr()
             if manager.Login():
                 if manager.is_admin():
                     clr()

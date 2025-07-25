@@ -4,239 +4,219 @@
     "name": "iPhone 14",
     "description": "Apple smartfoni, 128GB, OLED ekran",
     "price": 999.99,
-    "quantity": 15,
     "category": "Electronics",
-    "brand": "Apple",
     "in_stock": true,
     "created_at": "2025-07-01T10:00:00Z",
-    "updated_at": "2025-07-10T08:30:00Z"
+    "quantity": 15,
+    "brand": "Apple"
   },
   {
     "id": 2,
     "name": "Samsung Galaxy S23",
     "description": "Samsung flagman smartfoni, 256GB",
     "price": 899.99,
-    "quantity": 10,
     "category": "Electronics",
-    "brand": "Samsung",
     "in_stock": true,
     "created_at": "2025-07-02T11:00:00Z",
-    "updated_at": "2025-07-12T09:15:00Z"
+    "quantity": 10,
+    "brand": "Samsung"
   },
   {
     "id": 3,
     "name": "Lenovo Legion 5",
-    "description": "O‘yin uchun noutbuk, RTX 4060 grafikasi",
+    "description": "O\u2018yin uchun noutbuk, RTX 4060 grafikasi",
     "price": 1299.99,
-    "quantity": 5,
     "category": "Computers",
-    "brand": "Lenovo",
     "in_stock": true,
     "created_at": "2025-06-25T14:30:00Z",
-    "updated_at": "2025-07-15T10:00:00Z"
+    "quantity": 5,
+    "brand": "Lenovo"
   },
   {
     "id": 4,
     "name": "Sony WH-1000XM5",
     "description": "Premium noise-canceling naushnik",
     "price": 349.99,
-    "quantity": 20,
     "category": "Accessories",
-    "brand": "Sony",
     "in_stock": true,
     "created_at": "2025-07-03T09:00:00Z",
-    "updated_at": "2025-07-07T11:00:00Z"
+    "quantity": 20,
+    "brand": "Sony"
   },
   {
     "id": 5,
     "name": "Xiaomi Mi Band 8",
     "description": "Aqlli fitness bilaguzuk, suv o'tkazmaydi",
     "price": 49.99,
-    "quantity": 50,
     "category": "Wearables",
-    "brand": "Xiaomi",
     "in_stock": true,
     "created_at": "2025-07-04T08:00:00Z",
-    "updated_at": "2025-07-04T08:00:00Z"
+    "quantity": 50,
+    "brand": "Xiaomi"
   },
   {
     "id": 6,
     "name": "Dell Ultrasharp Monitor",
     "description": "27 dyuymli 4K ekran, IPS panel",
     "price": 479.99,
-    "quantity": 8,
     "category": "Computers",
-    "brand": "Dell",
     "in_stock": true,
     "created_at": "2025-06-30T13:00:00Z",
-    "updated_at": "2025-07-06T14:30:00Z"
+    "quantity": 8,
+    "brand": "Dell"
   },
   {
     "id": 7,
     "name": "HP LaserJet Printer",
     "description": "Qora-oq printer, WiFi bilan",
     "price": 199.99,
-    "quantity": 12,
     "category": "Office",
-    "brand": "HP",
     "in_stock": true,
     "created_at": "2025-06-28T15:00:00Z",
-    "updated_at": "2025-07-11T13:00:00Z"
+    "quantity": 12,
+    "brand": "HP"
   },
   {
     "id": 8,
     "name": "Asus ROG Mouse",
-    "description": "O‘yin uchun sichqoncha, RGB yoritish",
+    "description": "O\u2018yin uchun sichqoncha, RGB yoritish",
     "price": 59.99,
-    "quantity": 30,
     "category": "Accessories",
-    "brand": "Asus",
     "in_stock": true,
     "created_at": "2025-07-05T12:00:00Z",
-    "updated_at": "2025-07-05T12:00:00Z"
+    "quantity": 30,
+    "brand": "Asus"
   },
   {
     "id": 9,
     "name": "Canon EOS M50",
     "description": "Mirrorless kamera, 4K video",
     "price": 749.99,
-    "quantity": 6,
     "category": "Photography",
-    "brand": "Canon",
     "in_stock": true,
     "created_at": "2025-07-06T10:00:00Z",
-    "updated_at": "2025-07-10T16:00:00Z"
+    "quantity": 6,
+    "brand": "Canon"
   },
   {
     "id": 10,
     "name": "Apple MacBook Air M2",
     "description": "Apple chipli noutbuk, ultra yengil",
     "price": 1199.99,
-    "quantity": 7,
     "category": "Computers",
-    "brand": "Apple",
     "in_stock": true,
     "created_at": "2025-07-01T09:00:00Z",
-    "updated_at": "2025-07-08T11:00:00Z"
+    "quantity": 7,
+    "brand": "Apple"
   },
   {
     "id": 11,
     "name": "Google Pixel 8",
     "description": "Google smartfoni, Android 15 bilan",
     "price": 799.99,
-    "quantity": 11,
     "category": "Electronics",
-    "brand": "Google",
     "in_stock": true,
     "created_at": "2025-07-03T14:00:00Z",
-    "updated_at": "2025-07-03T14:00:00Z"
+    "quantity": 11,
+    "brand": "Google"
   },
   {
     "id": 12,
     "name": "Bose SoundLink Mini",
     "description": "Bluetooth speaker, kuchli bass",
     "price": 129.99,
-    "quantity": 18,
     "category": "Audio",
-    "brand": "Bose",
     "in_stock": true,
     "created_at": "2025-06-29T10:30:00Z",
-    "updated_at": "2025-07-09T09:00:00Z"
+    "quantity": 18,
+    "brand": "Bose"
   },
   {
     "id": 13,
     "name": "Samsung SSD 1TB",
     "description": "Tezkor NVMe SSD, kompyuter uchun",
     "price": 159.99,
-    "quantity": 25,
     "category": "Storage",
-    "brand": "Samsung",
     "in_stock": true,
     "created_at": "2025-07-07T15:00:00Z",
-    "updated_at": "2025-07-07T15:00:00Z"
+    "quantity": 25,
+    "brand": "Samsung"
   },
   {
     "id": 14,
     "name": "TP-Link Router AX1800",
     "description": "WiFi 6 routeri, yuqori tezlik",
     "price": 89.99,
-    "quantity": 13,
     "category": "Networking",
-    "brand": "TP-Link",
     "in_stock": true,
     "created_at": "2025-07-02T12:00:00Z",
-    "updated_at": "2025-07-05T10:00:00Z"
+    "quantity": 13,
+    "brand": "TP-Link"
   },
   {
     "id": 15,
     "name": "LG 55 inch OLED TV",
     "description": "Smart televizor, 4K OLED panel",
     "price": 1399.99,
-    "quantity": 4,
     "category": "Home Entertainment",
-    "brand": "LG",
     "in_stock": true,
     "created_at": "2025-06-27T11:00:00Z",
-    "updated_at": "2025-07-13T13:00:00Z"
+    "quantity": 4,
+    "brand": "LG"
   },
   {
     "id": 16,
     "name": "Anker Power Bank 20,000mAh",
     "description": "Portativ zaryadlovchi qurilma, tez zaryadlash",
     "price": 39.99,
-    "quantity": 40,
     "category": "Accessories",
-    "brand": "Anker",
     "in_stock": true,
     "created_at": "2025-07-05T13:30:00Z",
-    "updated_at": "2025-07-05T13:30:00Z"
+    "quantity": 40,
+    "brand": "Anker"
   },
   {
     "id": 17,
     "name": "Razer BlackWidow Keyboard",
-    "description": "Mechanical klaviatura, o‘yin uchun",
+    "description": "Mechanical klaviatura, o\u2018yin uchun",
     "price": 119.99,
-    "quantity": 17,
     "category": "Accessories",
-    "brand": "Razer",
     "in_stock": true,
     "created_at": "2025-07-06T09:00:00Z",
-    "updated_at": "2025-07-09T09:45:00Z"
+    "quantity": 17,
+    "brand": "Razer"
   },
   {
     "id": 18,
     "name": "MSI Gaming Laptop",
     "description": "RTX grafik kartali kuchli noutbuk",
     "price": 1499.99,
-    "quantity": 3,
     "category": "Computers",
-    "brand": "MSI",
     "in_stock": true,
     "created_at": "2025-06-26T12:00:00Z",
-    "updated_at": "2025-07-14T16:00:00Z"
+    "quantity": 3,
+    "brand": "MSI"
   },
   {
     "id": 19,
     "name": "JBL Tune 510BT",
     "description": "Bluetooth quloqchin, qulay dizayn",
     "price": 49.99,
-    "quantity": 22,
     "category": "Audio",
-    "brand": "JBL",
     "in_stock": true,
     "created_at": "2025-07-03T11:00:00Z",
-    "updated_at": "2025-07-07T12:00:00Z"
+    "quantity": 22,
+    "brand": "JBL"
   },
   {
     "id": 20,
     "name": "Amazon Kindle Paperwhite",
-    "description": "Elektron kitob o‘quvchi, yorug‘lik bilan",
+    "description": "Elektron kitob o\u2018quvchi, yorug\u2018lik bilan",
     "price": 129.99,
-    "quantity": 9,
     "category": "Electronics",
-    "brand": "Amazon",
     "in_stock": true,
     "created_at": "2025-07-04T15:00:00Z",
-    "updated_at": "2025-07-06T17:00:00Z"
+    "quantity": 9,
+    "brand": "Amazon"
   }
 ]
