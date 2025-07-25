@@ -105,7 +105,11 @@ def cheak_username(username: str, users: list) -> bool:
     return True
 
 
-def check_phone(phone: str) -> bool:
+def check_phone(phone: str, users) -> bool:
+    if phone in [user.phone for user in users]:
+        clr()
+        print("Bu telefon raqami boshqa akkauntga ulangan.\n")
+        return False
     if not phone.isdigit():
         clr()
         print("Telefon raqamingizda faqat raqamlar bo'lishi kerak.\n")

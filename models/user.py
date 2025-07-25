@@ -11,7 +11,7 @@ from getpass import getpass
 
 class User:
 
-    def __init__(self, idd, username, password, phone, first_name, last_name, age, gender, joined_at=None, admin=False):
+    def __init__(self, idd, username, password, phone, first_name, last_name, age, gender, joined_at=None, admin=False, in_cart=None):
         self.id = idd
         self.username = username
         self.password = password
@@ -22,6 +22,7 @@ class User:
         self.gender = gender
         self.joined_at = joined_at or datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
         self.admin = admin
+        self.in_cart = in_cart or []
 
     def to_dict(self):
         return {
@@ -34,7 +35,8 @@ class User:
             'age': self.age,
             'gender': self.gender,
             'joined_at': self.joined_at,
-            'admin': self.admin
+            'admin': self.admin,
+            'in_cart': self.in_cart
         }
 
     @classmethod
@@ -100,7 +102,7 @@ class User:
         
         clr()
         phone = input("Phone - +998  ")
-        while not check_phone(phone):
+        while not check_phone(phone,  User.load_users()):
             phone = input("Enter your phone number again: ")
         phone = phone.replace(" ", "").replace("-", "")
         

@@ -9,16 +9,16 @@ def user_market(manager: Manager):
         choice = input(">> ")
 
         if choice == '1':
-            pass
+            manager.show_products()
         elif choice == '2':
-            pass
+            manager.view_cart()
         elif choice == '3':
             pass
         elif choice == '4':
             pass
         elif choice == '5':
             clr()
-            print("Siz Dasturdan chiqdingiz.")
+            print("Siz Akkauntdan chiqdingiz.")
             break
         else:
             clr()

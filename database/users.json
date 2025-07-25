@@ -9,6 +9,33 @@
     "age": 19,
     "gender": "male",
     "joined_at": "2025-07-23T02:04:42Z",
-    "admin": false
+    "admin": false,
+    "in_cart": []
+  },
+  {
+    "id": "94b9b764-7b46-411c-adff-348d8f96bcc9",
+    "username": "dnsfj",
+    "password": "1718c24b10aeb8099e3fc44960ab6949ab76a267352459f203ea1036bec382c2",
+    "phone": "958281167",
+    "first_name": "Ego",
+    "last_name": "Ozdjosn",
+    "age": 19,
+    "gender": "other",
+    "joined_at": "2025-07-23T11:06:59Z",
+    "admin": false,
+    "in_cart": []
+  },
+  {
+    "id": "bbacb5ff-e30d-4d5f-9791-a880c49e23c4",
+    "username": "ego",
+    "password": "1718c24b10aeb8099e3fc44960ab6949ab76a267352459f203ea1036bec382c2",
+    "phone": "958281167",
+    "first_name": "Ozodjon",
+    "last_name": "Xasanov",
+    "age": 19,
+    "gender": "male",
+    "joined_at": "2025-07-23T11:13:16Z",
+    "admin": false,
+    "in_cart": []
   }
 ]
